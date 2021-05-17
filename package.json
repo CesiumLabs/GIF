@@ -1,0 +1,45 @@
+{
+  "name": "@canvacord/gif",
+  "version": "1.0.0",
+  "description": "GIF decoder/encoder for Canvacord",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "build": "tsc",
+    "test": "cd test && ts-node --files index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSnowflake/gif.git"
+  },
+  "keywords": [
+    "gif",
+    "canvacord",
+    "gifencoder",
+    "gifdecoder"
+  ],
+  "author": "Snowflake107",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevSnowflake/gif/issues"
+  },
+  "homepage": "https://github.com/DevSnowflake/gif#readme",
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.0.6",
+    "@types/gif-encoder": "^0.7.0",
+    "@types/ndarray": "^1.0.9",
+    "@types/ndarray-ops": "^1.2.1",
+    "@types/node": "^15.3.0",
+    "@types/omggif": "^1.0.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "gif-encoder": "^0.7.2",
+    "ndarray": "^1.0.19",
+    "ndarray-ops": "^1.2.2",
+    "omggif": "^1.0.10",
+    "pngjs-nozlib": "^1.0.0"
+  }
+}
