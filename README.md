@@ -14,8 +14,13 @@ $ yarn add @canvacord/gif
 ## Decoding GIF
 
 ```js
+// es6
 import { Decoder } from '@canvacord/gif';
 import { readFileSync, createWriteStream } from 'fs';
+
+// cjs
+const { Decoder } = require('@canvacord/gif');
+const { readFileSync, createWriteStream } = require('fs');
 
 const source = readFileSync('./img.gif');
 const decoder = new Decoder(source);
@@ -36,8 +41,13 @@ for (let i = 0; i < pngFrames.length; i++) {
 ## Encoding raw frame to GIF
 
 ```js
+// es6
 import { Decoder, Encoder } from '@canvacord/gif';
 import { readFileSync, createWriteStream } from 'fs';
+
+// cjs
+const { Decoder, Encoder } = require('@canvacord/gif');
+const { readFileSync, createWriteStream } = require('fs');
 
 const source = readFileSync('./img.gif');
 const decoder = new Decoder(source);
