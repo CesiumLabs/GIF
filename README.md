@@ -14,7 +14,7 @@ $ yarn add @canvacord/gif
 ## Decoding GIF
 
 ```js
-import { Deocder } from '@canvacord/gif';
+import { Decoder } from '@canvacord/gif';
 import { readFileSync, createWriteStream } from 'fs';
 
 const source = readFileSync('./img.gif');
