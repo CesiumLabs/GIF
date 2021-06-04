@@ -56,6 +56,6 @@ const rawFrames = decoder.decode();
 // encode each frames into gif
 for (let i = 0; i < rawFrames.length; i++) {
     const frame = new Encoder(rawFrames[i]).encode();
-    frame.pipe(createWriteStream(`./frame_${i}.png`));
+    frame.pipe(createWriteStream(`./frame_${i}.gif`));
 }
 ```
